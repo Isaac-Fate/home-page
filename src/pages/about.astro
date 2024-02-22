@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const skills = ["Python", "Rust", "Go"];
+const skillColor = "navy";
+const textCase = "upper";
+---
+
+<BaseLayout pageTitle="<- Me ->">
+    <p>My skills are:</p>
+    <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+</BaseLayout>
